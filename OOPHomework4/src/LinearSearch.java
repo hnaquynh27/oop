@@ -1,0 +1,24 @@
+public class LinearSearch {
+    public static boolean linearSearch(int[] arr, int key) {
+        for (int i : arr) {
+            if (i == key) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public static int linearSearchIndex(int[] arr, int key) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == key) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {};
+        System.out.println(linearSearch(arr, 10));
+    }
+}

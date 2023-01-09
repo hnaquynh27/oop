@@ -1,0 +1,31 @@
+1. Đây chính là cơ chế hoạt động của Insertion Sort.
+
+Nó bắt đầu từ phần tử thứ 2 (tức index = 1).
+
+Coi phần tử đầu tiên (tức index = 0) là một cỗ bài đã được sắp xếp. Mỗi phần tử bắt đầu từ vị trí index = 1 sẽ giống như 1 thẻ bài mới.
+
+Với cấu trúc dữ liệu mảng, chúng ta tưởng tượng là, mảng gồm hai phần:
+
+Một danh sách con đã được sắp xếp và phần khác là các phần tử không có thứ tự.
+Trong thuật toán, để sắp xếp một mảng có kích thước n theo thứ tự tăng dần:
+
+1: Lặp lại từ arr[1] đến arr[n] trên mảng.
+
+2: So sánh phần tử hiện tại (khóa) với phần tử trước của nó.
+
+3: Nếu phần tử chính nhỏ hơn phần tử trước của nó, hãy so sánh nó với các phần tử trước đó. Di chuyển các phần tử lớn hơn lên một vị trí để tạo khoảng trống cho phần tử được hoán đổi.
+
+2. Bubble Sort (Sắp xếp nổi bọt) là một thuật toán sắp xếp đơn giản, với thao tác cơ bản là so sánh hai phần tử kề nhau, nếu chúng chưa đứng đúng thứ tự thì đổi chỗ (swap).
+3. Selection Sort (sắp xếp chọn) là một thuật toán sắp xếp đơn giản dựa trên so sánh tại chỗ, trong đó:
+
+   Danh sách được chia thành hai phần (Trái - Phải) (Vẫn là cùng một mảng nhé)
+   Phần được sắp xếp ở đầu bên trái và phần chưa được sắp xếp ở đầu bên phải
+   Lúc đầu thì phần bên phải là toàn bộ danh sách. (Vì phần bên trái chưa sắp xếp mà)
+   Mỗi lần lặp chúng ta sẽ liên tục tìm giá trị nhỏ nhất ở phần bên phải, hoán đổi vị trí của nó cho phần tử ngoài cùng bên trái.
+
+Nhận vào một số N đại diện cho số thứ N trong dãy fibonacci. Kiểm tra nếu N = 0, 1 thì trả về 0,1 tương ứng vì chúng là các chữ số bắt đầu của dãy số fibo. Đây cũng được xem là điều kiện dừng trong quy tắc viết một hàm đệ quy.
+Nếu N >= 3,  hàm đệ quy sẽ gọi lại chính nó với N – 1 và N – 2, do vậy kết quả số fibo thứ N được tính từ số fibo N – 1 và N – 2.
+
+Phương thức factorial() đang gọi chính nó. Ban đầu, giá trị của n là 4 bên trong factorial().
+Trong lần gọi đệ quy tiếp theo, phương thức factorial() sẽ được gọi với giá trị là 3. Quá trình này tiếp tục cho đến khi n bằng 0.
+
