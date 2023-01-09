@@ -1,0 +1,13 @@
+1. không thể sử dụng một số nguyên âm làm kích thước, kích thước của một mảng đại diện cho số lượng các phần tử trong đó.
+Số lượng phần tử trong một mảng là âm thì không có ý nghĩa gì. Nếu làm như đề, chương trình sẽ được biên dịch mà không có vấn đề,
+nhưng trong khi thực hiện, nó sẽ thông báo negativearraysizeexception.
+
+2. Lỗi OutOfMemory do không có đủ không gian để phân bổ một đối tượng, không thể cung cấp khoảng trống để chứa một đối tượng mới
+ và heap không thể được mở rộng hơn nữa.
+
+3. Khối lệnh sau chưa đúng vì không khai báo kích thước của mảng.
+
+4. Khối lệnh thực hiện in ra false dù 2 mảng là giống nhau vì ở đây so sánh địa chỉ chúng trỏ đến chứ không
+so sánh giá trị của chúng.
+
+5.
